@@ -3,7 +3,7 @@ import HowItWorks from "../_components/HowItWorks";
 
 export default function Home() {
   return (
-    <div className="">
+    <div className="w-full">
       <Hero />
       <HowItWorks />
     </div>

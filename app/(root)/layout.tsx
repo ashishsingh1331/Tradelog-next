@@ -17,9 +17,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <div className="w-full sm:w-4/5 lg:w-3/5 max-w-1200 m-auto flex flex-col h-screen">
+    <div className="w-full sm:w-4/5 lg:w-4/6 max-w-1200 m-auto flex flex-col h-screen">
       <Header />
-      <main className=" flex-1">{children}</main>
+      <main className="flex-1">{children}</main>
       <Footer />
     </div>
   );
