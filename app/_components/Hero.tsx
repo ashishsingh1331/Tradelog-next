@@ -1,10 +1,11 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 const Hero = () => {
   return (
-    <div className=" flex mt-10 flex-col items-center justify-center">
+    <div className="flex mt-10 py-14 flex-col items-center justify-center">
       <h1 className=" text-black mb-4 text-center w-[80%] font-thin text-[40px] md:text-[60px]">
         Welcome to <strong>Trade log</strong>
       </h1>
@@ -15,7 +16,7 @@ const Hero = () => {
         started today and experience hassle-free and desciplined approach of
         investing
       </p>
-      <Button size="lg">Sign Up now</Button>
+      <Button size="lg" ><Link href="/signup">Sign Up now</Link></Button>
     </div>
   );
 };

@@ -1,80 +1,224 @@
 import React from "react";
+import TableContents from "./TableContents";
+import Image from "next/image";
+import Link from "next/link";
 
 const HowItWorks = () => {
   return (
     <div
       id="how-it-works"
-      className="relative w-full"
+      className="relative py-10"
       style={{ scrollMargin: 100 }}
     >
-      <div className="w-full pl-4 lg:max-w-[1200px] mx-auto pt-8 md:py-10">
-        <h2 className="text-[32px] text-center">How it works</h2>
+      <div className="w-full pl-4 lg:max-w-[1200px] mx-auto md:pt-8 md:py-10">
+        <h2 className="md:text-5xl sm:text-3xl text-gray-800 tracking-wide font-semibold md:px-16 text-center">
+          Introducing Trade log: Start your journey toward financial wellness
+        </h2>
         <div className="w-full pt-8 md:py-10 flex flex-col md:flex-row items-center justify-between">
-          <div className="flex flex-col gap-10">
-            <div className="max-w-[29rem]">
-              <div className="text-[24px] mb-4 ">Create an account</div>
-              <div className="text-slate-700 text-[16px]">
-                Create your free account on Expensasaurus by providing your
-                basic details. It only takes a few minutes to get started.
+          <div className="flex flex-col gap-10 w-full">
+            <TableContents />
+
+            <div id="description" className="">
+              <div className="md:text-4xl sm:text-2xl text-xl font-semibold mb-4">
+                Description of the Project
+              </div>
+              <div className="text-slate-700 text-sm md:text-lg md:leading-8 md:py-3">
+                Expensasaurus is a user-friendly and intuitive expense-tracking
+                and budgeting application designed to empower individuals and
+                businesses alike. With its comprehensive features and seamless
+                interface, you can take control of your finances and make
+                informed decisions with ease.
+                <p className="md:mt-4 sm:mt-2">
+                  This is my submission for the Appwrite x Hashnode Hackathon
+                  🔥.
+                </p>
               </div>
             </div>
-            <div className="max-w-[29rem]">
-              <div className="text-[24px] mb-4 ">Set Your Budget</div>
-              <div className="text-slate-700 text-[16px]">
-                Define your budget by allocating spending limits to different
-                categories, such as food, transportation, entertainment, and
-                more. Customize it to match your unique financial goals.
+
+            <div id="inspiration" className="">
+              <div className="md:text-4xl sm:text-2xl text-xl font-semibold mb-4">
+                Inspiration:
+              </div>
+              <div className="">
+                The inspiration behind building this project from the
+                realization that many existing financial analytics solutions
+                come with a hefty price tag, making it inaccessible for most
+                individuals and businesses.
               </div>
             </div>
-            <div className="max-w-[29rem]">
-              <div className="text-[24px] mb-4 ">
-                Track Your Expenses and Income
+
+            <div id="workflow" className="">
+              <div className="md:text-4xl sm:text-2xl text-xl font-semibold mb-4">
+                Application Workflow:
               </div>
-              <div className="text-slate-700 ">
-                Enter your expenses and income with ease. Add transactions,
-                categorize them, and keep a comprehensive record of your
-                financial activities to maintain an accurate overview.
+              <Image
+                src="/workflowimg.avif"
+                className="md:mt-10 object-cover"
+                width="1000"
+                height="500"
+                alt="image"
+              />
+            </div>
+
+            <div id="howitwork" className="max-w-[29rem] md:mt-6">
+              <div className="md:text-4xl sm:text-2xl text-xl font-semibold mb-4">
+                🧐 How does it work?
+              </div>
+              <div className="text-slate-700 flex flex-col">
+                <span className="text-slate-700 text-sm md:text-xl md:leading-8 md:py-3">
+                  1. Create an Account:{" "}
+                  <Link href="/" className="underline">
+                    Signup here.
+                  </Link>
+                </span>
+                <span className="text-slate-700 text-sm md:text-xl md:leading-8 md:py-3">
+                  2.{" "}
+                  <Link href="/" className="underline">
+                    set your budget.
+                  </Link>
+                </span>
+                <span className="text-slate-700 text-sm md:text-xl md:leading-8 md:py-3">
+                  3. Log & Track your expenses and income. <br />
+                  <Link href="/" className="underline ms-6">
+                    Add Expenses{" "}
+                  </Link>
+                  and{" "}
+                  <Link href="/" className="underline">
+                    Incomes
+                  </Link>
+                </span>
+                <span className="text-slate-700 text-sm md:text-xl md:leading-8 md:py-3">
+                  4. Monitor your Budget:{" "}
+                  <p className="ms-6">
+                    Get an overview of your spending habits with charts and
+                    graphs.
+                  </p>
+                </span>
+                <span className="text-slate-700 text-sm md:text-xl md:leading-8 md:py-3">
+                  5. Plan Ahead:{" "}
+                  <p className="ms-6">
+                    Make informed financial decisions and set savings goals.
+                  </p>
+                </span>
               </div>
             </div>
-            <div className="max-w-[29rem]">
-              <div className="text-[24px] mb-4 ">Monitor Your Budget</div>
-              <div className="text-slate-700 text-[16px]">
-                Keep a close eye on your budget's progress with real-time
-                updates. Visualize your spending patterns, track category-wise
-                expenses, and receive notifications to stay within your limits.
+
+            <div id="features" className="md:mt-6">
+              <div className="md:text-4xl sm:text-2xl text-xl font-semibold mb-4">
+                Features
+              </div>
+              <Image
+                src="/featureimg.avif"
+                className="md:mt-10 object-cover"
+                width="1000"
+                height="500"
+                alt="image"
+              />
+              <div className="flex text-slate-700 text-sm md:text-xl md:leading-8 md:py-3 md:mt-14">
+                <span>1.</span>
+                <span className="ms-2">
+                  Intuitive Expense Tracking: Expensasaurus offers a
+                  user-friendly interface that allows you to effortlessly track
+                  your expenses. With just a few clicks, you can record your
+                  spending, categorize transactions, and add detailed
+                  descriptions. Say goodbye to the hassle of manual expense
+                  logging and let Expensasaurus do the work for you.
+                </span>
+              </div>
+              <div className="flex text-slate-700 text-sm md:text-xl md:leading-8 md:py-3 md:mt-6">
+                <span>2.</span>
+                <span className="ms-2">
+                  Comprehensive Budget Management: Take control of your finances
+                  with the budget management feature. Set monthly spending
+                  limits for different categories such as food, transportation,
+                  entertainment, and more.
+                </span>
+              </div>
+              <div className="flex text-slate-700 text-sm md:text-xl md:leading-8 md:py-3 md:mt-6">
+                <span>3.</span>
+                <span className="ms-2">
+                  Smart Insights and Analytics: Gain valuable financial
+                  intelligence with interactive charts and graphs that visualize
+                  your spending patterns. Identify trends, understand where your
+                  money goes, and make data-driven decisions to optimize your
+                  budget.
+                </span>
+              </div>
+              <div className="flex text-slate-700 text-sm md:text-xl md:leading-8 md:py-3 md:mt-6">
+                <span>4.</span>
+                <span className="ms-2">
+                  Transaction Categorization and Filtering: Efficiently manage
+                  your expenses with transaction categorization and filtering
+                  capabilities. Easily group transactions by category, date, or
+                  custom tags, making it effortless to search and analyze
+                  specific spending patterns. Stay organized and retrieve
+                  information with ease whenever you need it.
+                </span>
               </div>
             </div>
-            <div className="max-w-[29rem]">
-              <div className="text-[24px] mb-4 ">Analyze Your Finances</div>
-              <div className="text-slate-700 text-[16px]">
-                Gain valuable insights into your financial habits with our
-                intuitive analysis tools. Explore interactive charts and reports
-                to understand where your money is going and make informed
-                decisions.
+
+            <div id="routes" className="md:mt-10">
+              <div className="md:text-4xl sm:text-2xl text-xl font-semibold mb-4">
+                Routes and their description
+              </div>
+              <div className="flex text-slate-700 text-sm md:text-xl md:leading-8 md:py-3 md:mt-14">
+                <span>1.</span>
+                <span className="ms-2">
+                  Home ("/"): <br />
+                  The landing page of Expensasaurus provides an overview of the
+                  application and its key features.
+                </span>
+              </div>
+                <Image
+                  src="/routesimg.avif"
+                  className="md:mt-10 object-cover"
+                  width="1000"
+                  height="500"
+                  alt="image"
+                />
+              <div className="flex text-slate-700 text-sm md:text-xl md:leading-8 md:py-3 md:mt-6">
+                <span>2.</span>
+                <span className="ms-2">
+                  Login ("/login"): <br/>Allows users to log in to their
+                  Expensasaurus account, providing secure access to their
+                  expense data.
+                </span>
+              </div>
+              <div className="flex text-slate-700 text-sm md:text-xl md:leading-8 md:py-3 md:mt-6">
+                <span>3.</span>
+                <span className="ms-2">
+                  Signup ("/signup"): <br/>Enables new users to create an account and
+                  join Expensasaurus.
+                </span>
+              </div>
+              <div className=" text-slate-700 text-sm md:text-xl md:leading-8 md:py-3 md:mt-6">
+                <span>4.</span>
+                <span className="ms-2">
+                  Dashboard ("/dashboard"):
+                </span>
+                <Image
+                  src="/dashboardimg.avif"
+                  className="md:mt-10 object-cover"
+                  width="1000"
+                  height="500"
+                  alt="image"
+                />
               </div>
             </div>
-            <div className="max-w-[29rem]">
-              <div className="text-[24px] mb-4 ">Adjust and Optimize</div>
-              <div className="text-slate-700 text-[16px]">
-                Fine-tune your budget as needed based on your financial goals
-                and changing circumstances. Modify spending limits, add new
-                categories, or reallocate funds to optimize your budget.
+
+            
+            <div id="techstack" className="">
+              <div className="md:text-4xl sm:text-2xl text-xl font-semibold mb-4">
+              🛠 Tech Stack
+              </div>
+              <div className="text-slate-700 text-sm md:text-lg md:leading-8 md:py-3">
+                <li>Next.js</li>
+                <li>Javascript</li>
+                <li>shadcn</li>
               </div>
             </div>
-          </div>
-          <div>
-            <img
-              alt="How it works."
-              loading="lazy"
-              width={700}
-              height={900}
-              decoding="async"
-              data-nimg={1}
-              className="z-[-1] mt-4 md:mt-0 md:opacity-30 lg:opacity-100 md:absolute md:right-0 md:top-[50%] md:translate-y-[-50%]"
-              srcSet="/_next/image?url=%2Fshowcase1.png&w=750&q=75 1x, /_next/image?url=%2Fshowcase1.png&w=1920&q=75 2x"
-              src="/_next/image?url=%2Fshowcase1.png&w=1920&q=75"
-              style={{ color: "transparent" }}
-            />
+
+           
           </div>
         </div>
       </div>
